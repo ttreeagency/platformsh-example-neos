@@ -1,0 +1,112 @@
+Flow_Session_MetaData:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    database: 4
+
+Flow_Session_Storage:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    database: 4
+
+Neos_Fusion_Content:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    compressionLevel: 6
+    database: 6
+
+Flow_I18n_AvailableLocalesCache:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    database: 7
+
+Flow_I18n_XmlModelCache:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    database: 7
+
+Flow_I18n_Cldr_CldrModelCache:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    database: 7
+
+Flow_I18n_Cldr_Reader_DatesReaderCache:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    database: 7
+
+Flow_I18n_Cldr_Reader_NumbersReaderCache:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    database: 7
+
+Flow_I18n_Cldr_Reader_PluralsReaderCache:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    database: 7
+
+Flow_Mvc_Routing_Route:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    database: 8
+
+Flow_Mvc_Routing_Resolve:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    database: 8
+
+Flow_Resource_Status:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    database: 9
+
+Flow_Security_Authorization_Privilege_Method:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    database: 10
+
+Flow_Security_Cryptography_RSAWallet:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 30
+    database: 10
+
+Neos_Media_ImageSize:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    database: 11
+
+Neos_Neos_XliffToJsonTranslations:
+  backend: Neos\Flow\Cache\Backend\RedisBackend
+  backendOptions:
+    hostname: '%env:REDIS_HOST%'
+    defaultLifetime: 0
+    database: 12
