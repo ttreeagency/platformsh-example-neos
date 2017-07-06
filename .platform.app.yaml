@@ -1,10 +1,9 @@
-name: app
+name: neos
 
 type: "php:7.1"
 
 variables:
   env:
-    FLOW_CONTEXT: 'Production/PlatformSh'
     FLOW_PATH_TEMPORARY_BASE: '/tmp'
     FLOW_REWRITEURLS: 1
 
