@@ -5,8 +5,6 @@ This is the offical example for running Neos CMS version 3.1 on platform.sh.
 
 This distribution use PHP 7.1, PostgreSQL 9.6 and Redis 3.0.
 
-_Currently this distribution is in alpha state_
-
 Refer to [neos.io](https://neos.io/) for information on Neos CMS.
 
 This example is maintained by ttree agency [ttree ltd - neos solution provider](http://ttree.ch).
