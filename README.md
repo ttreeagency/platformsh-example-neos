@@ -11,12 +11,6 @@ Refer to [neos.io](https://neos.io/) for information on Neos CMS.
 
 This example is maintained by ttree agency [ttree ltd - neos solution provider](http://ttree.ch).
 
-Configure environements variables
----------------------------------
-
-    platform project:variable:set --no-visible-runtime env:FLOW_CONTEXT Production/PlatformShBuild
-    platform project:variable:set --no-visible-build env:FLOW_CONTEXT Production/PlatformSh
-
 How to deploy on Platform.sh
 ----------------------------
 
@@ -26,12 +20,12 @@ How to deploy on Platform.sh
     # After the deployment
     platform ssh
     ./flow site:import --package-key Neos.Demo
-    ./flow user:create username password Firstname Lastname
-    ./flow user:addrole username Neos.Neos:Administrator
+    ./flow user:create admin changeme Firstname Lastname
+    ./flow user:addrole admin Neos.Neos:Administrator
     
 Then you can visit your site, you should see the Neos CMS demo site. 
 
-To access the backend your can add:
+To access the backend your can add, with the username ```admin``` and the password ```changeme```:
 
   - /neos (for the current Ember.js Backend)
   - /neos! (for a preview on the React.js Backend)
