@@ -17,18 +17,15 @@ How to deploy on Platform.sh
     git remote add platform your-user@git.eu.platform.sh:your-user.git
     git push -u platform master
     
-    # After the deployment
-    platform ssh
-    ./flow site:import --package-key Neos.Demo
-    ./flow user:create admin changeme Firstname Lastname
-    ./flow user:addrole admin Neos.Neos:Administrator
-    
 Then you can visit your site, you should see the Neos CMS demo site. 
 
 To access the backend your can add, with the username ```admin``` and the password ```changeme```:
 
   - /neos (for the current Ember.js Backend)
   - /neos! (for a preview on the React.js Backend)
+
+Check ```.platform.app.yaml```, you can remove ```php flow platform:setup``` after the first deployment. This
+CLI helper is just used to import the demo site and create the admin account.
 
 Acknowledgments
 ---------------

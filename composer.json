@@ -17,7 +17,7 @@
         "flowpack/neos-frontendlogin": "~3.0",
         "neos/redirecthandler-neosadapter": "~2.0",
         "neos/redirecthandler-databasestorage": "~2.0",
-        "ttree/neosplatformsh": "^1.0"
+        "ttree/neosplatformsh": "~1.0"
     },
     "require-dev": {
         "neos/buildessentials": "~4.1.0",

@@ -47,3 +47,4 @@ hooks:
     php flow flow:cache:flush
     php flow doctrine:migrate
     php flow cache:warmup
+    php flow platform:setup

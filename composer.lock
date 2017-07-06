@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "eabb5c4929d967ea17d3c6bf1be2230b",
-    "content-hash": "4bca3b4880b36e83c86ef9cd26e0ab4a",
+    "hash": "e609ad4c014292b2971cb415bae89cb7",
+    "content-hash": "6257fcc3ce5d7142daf129006cce25a1",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -3970,16 +3970,16 @@
         },
         {
             "name": "ttree/neosplatformsh",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ttreeagency/NeosPlatformSh.git",
-                "reference": "5996aec6475c558645ca4a420e715cf631515c57"
+                "reference": "8ddb54ab6d0b119014f5c4b2412b059ecd613704"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ttreeagency/NeosPlatformSh/zipball/5996aec6475c558645ca4a420e715cf631515c57",
-                "reference": "5996aec6475c558645ca4a420e715cf631515c57",
+                "url": "https://api.github.com/repos/ttreeagency/NeosPlatformSh/zipball/8ddb54ab6d0b119014f5c4b2412b059ecd613704",
+                "reference": "8ddb54ab6d0b119014f5c4b2412b059ecd613704",
                 "shasum": ""
             },
             "require": {
@@ -3999,11 +3999,8 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
             "description": "Platform.sh for Neos CMS made easy",
-            "time": "2017-07-01 13:46:10"
+            "time": "2017-07-06 18:47:55"
         },
         {
             "name": "typo3fluid/fluid",
