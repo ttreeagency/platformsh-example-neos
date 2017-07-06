@@ -1,5 +1,6 @@
 Neos CMS on Platform.sh
 =====
+
 This is the offical example for running Neos CMS version 3.1 on platform.sh.
 
 This distribution use PHP 7.1, PostgreSQL 9.6 and Redis 3.0.
@@ -9,6 +10,33 @@ _Currently this distribution is in alpha state_
 Refer to [neos.io](https://neos.io/) for information on Neos CMS.
 
 This example is maintained by ttree agency [ttree ltd - neos solution provider](http://ttree.ch).
+
+Configure environements variables
+---------------------------------
+
+    platform variable:set env:FLOW_REWRITEURLS 1
+    platform variable:set env:FLOW_CONTEXT Production/PlatformSh
+    platform variable:set env:FLOW_PATH_TEMPORARY_BASE /tmp
+
+How to deploy on Platform.sh
+----------------------------
+
+    git remote add platform your-user@git.eu.platform.sh:your-user.git
+    git push -u platform master
+    
+    # After the deployment
+    platform ssh
+    ./flow doctrine:migrate
+    ./flow site:import --package-key Neos.Demo
+    ./flow user:create username password Firstname Lastname
+    ./flow user:addrole username Neos.Neos:Administrator
+    
+Then you can visit your site, you should see the Neos CMS demo site. 
+
+To access the backend your can add:
+
+  - /neos (for the current Ember.js Backend)
+  - /neos! (for a preview on the React.js Backend)
 
 Acknowledgments
 ---------------
