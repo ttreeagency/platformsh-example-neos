@@ -2,6 +2,12 @@ name: app
 
 type: "php:7.1"
 
+variables:
+  env:
+    FLOW_CONTEXT: 'Production/PlatformSh'
+    FLOW_PATH_TEMPORARY_BASE: '/tmp'
+    FLOW_REWRITEURLS: 1
+
 build:
   flavor: "composer"
 
@@ -33,7 +39,7 @@ mounts:
 hooks:
   build: |
     php flow flow:package:rescan
-    php flow cache:warmup
   deploy: |
     php flow flow:cache:flush --force
+    php flow doctrine:migrate
     php flow cache:warmup

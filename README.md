@@ -11,13 +11,6 @@ Refer to [neos.io](https://neos.io/) for information on Neos CMS.
 
 This example is maintained by ttree agency [ttree ltd - neos solution provider](http://ttree.ch).
 
-Configure environements variables
----------------------------------
-
-    platform variable:set env:FLOW_REWRITEURLS 1
-    platform variable:set env:FLOW_CONTEXT Production/PlatformSh
-    platform variable:set env:FLOW_PATH_TEMPORARY_BASE /tmp
-
 How to deploy on Platform.sh
 ----------------------------
 
@@ -26,7 +19,6 @@ How to deploy on Platform.sh
     
     # After the deployment
     platform ssh
-    ./flow doctrine:migrate
     ./flow site:import --package-key Neos.Demo
     ./flow user:create username password Firstname Lastname
     ./flow user:addrole username Neos.Neos:Administrator
