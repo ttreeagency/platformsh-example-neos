@@ -3,7 +3,9 @@
 /Build/BuildEssentials
 /Build/Reports
 /Build/Resources
-/Configuration/
+/Configuration/*
+/Configuration/Production/*.example
+!/Configuration/Production/
 /Data/
 /Packages/
 /Web/
