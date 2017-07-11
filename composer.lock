@@ -3934,16 +3934,16 @@
         },
         {
             "name": "ttree/flowplatformsh",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ttreeagency/FlowPlatformSh.git",
-                "reference": "f3c090470ea2dd085acc0d279a388c8eba6d389a"
+                "reference": "0c5a8a3402d25faec2cf134bab76deeefb79d420"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ttreeagency/FlowPlatformSh/zipball/f3c090470ea2dd085acc0d279a388c8eba6d389a",
-                "reference": "f3c090470ea2dd085acc0d279a388c8eba6d389a",
+                "url": "https://api.github.com/repos/ttreeagency/FlowPlatformSh/zipball/0c5a8a3402d25faec2cf134bab76deeefb79d420",
+                "reference": "0c5a8a3402d25faec2cf134bab76deeefb79d420",
                 "shasum": ""
             },
             "require": {
@@ -3969,7 +3969,7 @@
                 "MIT"
             ],
             "description": "Platform.sh for Flow Framework made easy",
-            "time": "2017-07-11 16:44:50"
+            "time": "2017-07-11 17:27:04"
         },
         {
             "name": "ttree/neosplatformsh",
