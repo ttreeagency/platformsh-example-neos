@@ -39,7 +39,7 @@ mounts:
 hooks:
   build: |
     set -e
-    export FLOW_CONTEXT=Production/PlatformShBuild
+    export FLOW_CONTEXT=${FLOW_CONTEXT}Build
     php flow flow:package:rescan
     php flow cache:warmup
   deploy: |
