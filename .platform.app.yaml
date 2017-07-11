@@ -46,9 +46,10 @@ hooks:
     gulp compress
     php flow flow:package:rescan
     php flow cache:warmup
+    php flow platform:build
   deploy: |
     set -e
     php flow flow:cache:flush
     php flow doctrine:migrate
     php flow cache:warmup
-    php flow platform:setup
+    php flow platform:deploy
