@@ -1,8 +1,8 @@
 {
-  "name": "hsso_distribution",
+  "name": "platformsh-example-neos",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@gitlab.ttree.ch:hsso/website-distribution.git",
+  "repository": "git@github.com:ttreeagency/platformsh-example-neos.git",
   "author": "Dominique Feyer <dfeyer@ttree.ch>",
   "license": "MIT",
   "dependencies": {
