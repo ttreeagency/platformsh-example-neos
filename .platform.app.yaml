@@ -40,6 +40,10 @@ hooks:
   build: |
     set -e
     export FLOW_CONTEXT=${FLOW_CONTEXT}Build
+    npm install -g yarn
+    npm install -g gulp-cli
+    yarn install
+    gulp compress
     php flow flow:package:rescan
     php flow cache:warmup
   deploy: |

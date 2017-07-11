@@ -1,0 +1,14 @@
+{
+  "name": "hsso_distribution",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitlab.ttree.ch:hsso/website-distribution.git",
+  "author": "Dominique Feyer <dfeyer@ttree.ch>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-brotli": "^1.2.0",
+    "gulp-cli": "^1.3.0",
+    "gulp-zopfli": "^1.0.0"
+  }
+}
